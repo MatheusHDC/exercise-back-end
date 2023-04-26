@@ -20,9 +20,3 @@ const TransactionModel: TransactionSequelizeModelCreator = db.define('Transactio
 });
 
 export default TransactionModel;
-
-/*
-UserCreationAttributes = UserInputtableFields
-UserModelDefinedType = UserSequelizeModelCreator
-UserModelType = UserSequelizeModel
-*/
