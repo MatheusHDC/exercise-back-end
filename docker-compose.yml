@@ -22,9 +22,7 @@ services:
     working_dir: /app
     # Lista de volumes (diretórios) mapeados de fora para dentro do container
     volumes:
-      # Monta o diretório atual, com todos os dados do projeto, 
-      # dentro do diretório /app
-      - ./:/app
+      # Monta os diretórios `src` e `tests` dentro do diretório `/app`
       - ./src/:/app/src
       - ./tests/:/app/tests
     # Lista de serviços do qual este serviço depende
@@ -48,8 +46,7 @@ services:
   # Serviço que irá rodar o banco de dados
   db:
     container_name: transactions_db
-    image: mysql:8.0.21
-    # platform: linux/amd64
+    image: mysql:8.0.32
     restart: always
     # Lista de portas mapeadas de dentro para fora do container
     # na notação porta_de_fora:porta_de_dentro
