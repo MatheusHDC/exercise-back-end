@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "breed": "Bromélia",
+    "size": 102,
+    "needsSun": false,
+    "origin": "Argentina",
+    "waterFrequency": 67.83
+  },
+  {
+    "breed": "mateususus",
+    "size": 300,
+    "needsSun": false,
+    "origin": "Brasil",
+    "waterFrequency": 300,
+    "id": 2
+  }
+]
